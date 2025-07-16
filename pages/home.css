@@ -1,0 +1,30 @@
+.container {
+  background-image: url('/bg-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding-top: 64px; /* To avoid content hiding behind navbar */
+}
+
+.navbarwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 64px;
+  background: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+
+  /* ✅ Remove flex column — let RSuite handle layout */
+  display: block;
+}
+
+/* ✅ Optional override to ensure transparency */
+.rs-navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+}
