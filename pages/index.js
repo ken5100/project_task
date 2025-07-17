@@ -91,9 +91,36 @@ export default function Home() {
   </div>
 </div>
 
-<div>
-  <img src="/Content.png" alt="Hero" className={styles.content01} />
+<div className={styles.headingWrapper}>
+  <div className={styles.textGroup}>
+    <h1 className={styles.content01Heading}>
+      <span>YOUR MUSIC</span><br />
+      <span>OUR MISSION</span>
+    </h1>
+
+    <p>
+      Distribute your music to top platforms, grow your <br /> audience,
+      and get the recognition you deserve.
+    </p>
+
+   <div className={styles.tagline}>
+  <span className={styles.emoji}>🚀</span>
+  <span className={styles.tag}>Music Distribution</span>
+  <span className={styles.pipe}>|</span>
+  <span className={styles.emoji}>🛡️</span>
+  <span className={styles.tag}>Marketing</span>
+  <span className={styles.pipe}>|</span>
+  <span className={styles.emoji}>📞</span>
+  <span className={styles.tag}>Artist & Label Solutions</span>
 </div>
+
+
+    <button className={styles.ctaButton}>Start Free Now</button>
+  </div>
+</div>
+
+
+
     <div>
        <img src="/bg-2.png" alt="Hero" className={styles.content02} />
     </div>
@@ -103,22 +130,46 @@ export default function Home() {
       </div>
  <img src="/bg-3.png" alt="Junction" className={styles.junctionImage} />
 
-      <div className={styles.secondContainer}>
+     <div className={styles.secondContainer}>
   <div className={styles.secondContent}>
-    
     <div className={styles.imageRow}>
+      
+      {/* LEFT SIDE: Headings */}
+      <div className={styles.textColumn}>
+  <h6>Our MISSION</h6>
+  <h1>
+    Empowering Independent Artists & <br />
+    Labels to Rule the Global Stage
+  </h1>
 
-    <div className={styles.imageWrapper1}>
-    <img src="/bg-6.png" alt="Image 1" className={styles.image1} />
-  </div>
-  <div className={styles.imageWrapper2}>
-    <img src="/bg-5.png" alt="Image 2" className={styles.image2} />
-  </div>
+  <p>
+    We help artists go live fast — your music hits 100+ stores like Spotify & Apple Music
+    within 48 hours. You keep 100% of your rights, always. No cuts, no control games.
+    And if you need help, real human support is just a call or email away — replies
+    within 24 hours. Simple. Fast. Artist-first.
+  </p>
 
-  </div>
-
-      </div>
+<div className={styles.highlights}>
+  🚀 Faster Music Delivery <span className={styles.pipe}>|</span>
+  🛡️ Keep your 100% Rights <span className={styles.pipe}>|</span>
+  📞 Real Human Support
 </div>
+<br></br>
+<button className={styles.ctaButton}>Get Started</button>
+
+</div>
+
+
+      {/* RIGHT SIDE: Image */}
+      <div className={styles.imageWrapper}>
+        <img src="/bg-5.png" alt="Image" className={styles.image2} />
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <div className={styles.thirdContainer}>
   <div className={styles.thirdContent}>
     <div className={styles.imageRow}>

@@ -1,4 +1,5 @@
 /* Home.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .fullPageWrapper {
   position: relative;
@@ -82,16 +83,169 @@
 }
 
 
-.content01 {
+/* .content01 {
   position: relative;
-  top: 100px; /* adjust to move below navbar */
+  top: 100px; 
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   width:  700px;
   height: 350px;
   pointer-events: none;
+} */
+ 
+.headingWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42vh;
+  text-align: center;
+  margin-top: 60px;
 }
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* Adjust spacing between heading and paragraph */
+}
+
+/* Your existing styles */
+.content01Heading {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: 1px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: transparent;
+  background: radial-gradient(160% 160% at 50% 24.29%, #F9F4ED 0%, rgba(238, 231, 220, 0) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  transform: scaleY(0.9) scaleX(1.05); /* makes it shorter and slightly wider */
+  transform-origin: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 20px;
+}
+
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* space between items */
+}
+
+.textGroup p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.tagline {
+  font-size: 18px;
+  color: transparent;
+  background: radial-gradient(160% 160% at 50% 24.29%, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+
+.ctaButton {
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #652CD6;
+  color: #fff;
+  border: none; /* removed white border */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(101, 44, 214, 0.3); /* soft purple glow */
+}
+
+.ctaButton:hover {
+  background-color: #7e4ee0;
+  box-shadow:
+    0 0 12px rgba(101, 44, 214, 0.6),
+    0 0 24px rgba(101, 44, 214, 0.4); /* purple-only glow */
+}
+
+
+
+.tagline {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 956px;
+  max-width: 100%;
+  height: 41px;
+  opacity: 1;
+  mix-blend-mode: plus-lighter;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tag {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; /* Use 700 or 800 for real bold */
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: transparent;
+  background: radial-gradient(160% 160% at 50% 24.29%, #ffffff 0%, rgba(217, 217, 217, 0) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  vertical-align: middle;
+}
+
+
+
+.pipe {
+  font-family: inherit;
+  font-size: 20px;
+  
+  color: #652CD6;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+}
+
+
+.emoji {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #fff; /* or any solid color that suits your background */
+}
+
+
+
+
+
+
+/* .headingWrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+} */
+
+
+
 
 .content02 {
   position: relative;
@@ -125,50 +279,134 @@
 }
 
 .secondContainer {
-  position: relative;
   width: 100vw;
   height: 100vh;
   background-image: url('/bg-4.png');
-  background-size: 105% 100%; 
+  background-size: 105% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
+.secondContent {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
 .imageRow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  height: 100%;
   align-items: center;
-  width: 100vw;
-  padding-top: 150px;
-  box-sizing: border-box;
+  justify-content: space-between;
 }
 
-.imageWrapper1,
-.imageWrapper2 {
-  flex: 1;
+.textColumn h6 {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 40px; /* FIX: was too high at 140px */
+  text-align: left;
+  text-transform: uppercase;
+
+  color: #652CD6;
+  opacity: 1;
+  mix-blend-mode: plus-lighter;
+
+  width: auto; /* remove fixed width unless needed */
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.textColumn h1 {
+  margin-top: 20px;
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 47px;
+  line-height: 60px;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  width: 100%;
+  max-width: 934px; /* Match paragraph width */
+  letter-spacing: 0;
+  opacity: 1;
+  mix-blend-mode: plus-lighter;
+
+  color: transparent;
+  background: radial-gradient(160% 160% at 50% 24.29%, #F9F4ED 0%, rgba(238, 231, 220, 0) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.textColumn p {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  vertical-align: middle;
+
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+
+.imageWrapper {
+  width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  align-items: stretch;
+  height: 100%; /* or fixed height like 600px */
+   margin-top: -190px;
+   margin-right: 50px; /* slight inward shift */
 }
 
-.image1,
 .image2 {
-  width: 100%;
-  max-width: 1500px;
-  height: auto;
-  max-height: 145vh;
-  object-fit: contain;
+  width: 150%;
+  height: 145%; /* fully stretch */
+  object-fit: fill; /* allows distortion */
 }
+
+
+.highlights {
+  width: 886px;
+  height: 41px;
+  margin-top: 20px;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+  vertical-align: middle;
+  color: #FFFFFF;
+  opacity: 1;
+  mix-blend-mode: plus-lighter;
+}
+
+.pipe {
+  color: #652CD6;
+  margin: 0 8px; /* adds space around the pipe */
+}
+
+
+
 
 
 .thirdContainer {
