@@ -177,7 +177,20 @@ export default function Home() {
         <img src="/bg-7.png" alt="Vertical" className={styles.verticalImage} />
       </div>
       <div className={styles.horizontalImageWrapper}>
-        <img src="/bg-8.png" alt="Horizontal" className={styles.horizontalImage} />
+        {/* <img src="/bg-8.png" alt="Horizontal" className={styles.horizontalImage} /> */}
+
+        <h6>Why Choose Us</h6>
+        <h1>Artist-First Philosophy</h1>
+        <p>In short, Maheshwari Visuals isn’t just a distributor—it’s a creative ecosystem built to<br></br>
+           empower, elevate, and evolve with the artist.</p>
+
+           <p className={styles.features}>
+  🛠️Powerful Tools & Dashboard<span>|</span>🚀Marketing & Exposure<span>|</span>🧬Community& <br/>
+  Collaboration
+</p>
+<button className={styles.ctaButton}>Get Started</button>
+
+
       </div>
     </div>
   </div>
@@ -186,8 +199,9 @@ export default function Home() {
 <div className={styles.fourthContainer}>
   <div className={styles.fourthContent}>
     <div className={styles.fourthColumn}>
-      <img src="/content2.png" alt="Content Heading" className={styles.content03} />
-      <img src="/content3.png" alt="Content Paragraph" className={styles.content04} />
+      
+      <h1>Our Services</h1>
+      <p>Everything You Need to Take Your Music Further.</p>
       <div className={styles.imageRowPortrait}>
   <img src="/bg-10.png" alt="Image 1" className={styles.portraitImage} />
   <img src="/bg-11.png" alt="Image 2" className={styles.portraitImage} />
@@ -201,8 +215,13 @@ export default function Home() {
 <div className={styles.fifthContainer}>
   <div className={styles.fifthContent}>
    <div className={styles.fifthColumn}>
-      <img src="/content4.png" alt="Content Heading" className={styles.content05} />
-      <img src="/content5.png" alt="Content Paragraph" className={styles.content06} />
+     
+    <h1 className={styles.fifthHeading}>
+  Trusted by 200k<span className={styles.plusSign}>+</span> Artists & Labels Globally
+</h1>
+<p className={styles.fifthParagraph}>We have roaster full of Artist and Labels across the Globe. We are here to get you collaborations with artists, fulfilling the <br/>
+  needs. Our roaster algorithim will help you to get collaboration according to your taste in Music.</p>
+
       <img src="/bg-13.png" alt="Image 1" className={styles.fifthImage} />
       </div>
   </div>
